@@ -17,5 +17,9 @@ func getNewBuilder(houseType string) Builder {
         return newBrickHouseBuilder()
     }
 
+    if (houseType == "Huge") {
+        return newApartmentBuilder()
+    }
+
     return nil
 }
